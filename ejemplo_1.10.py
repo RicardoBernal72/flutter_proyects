@@ -1,0 +1,6 @@
+BASE=int(input("ESCRIBE la Base:"))
+ALTU=int(input("ESCRIBE la Altura"))
+SUPERFICIE=BASE*ALTU
+PERIMETRO=2(BASE+ALTU)
+print(SUPERFICIE)
+print(PERIMETRO)
