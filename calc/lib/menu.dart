@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:calc1/main.dart';
 import 'package:calc1/saludo.dart';
-
+import 'package:calc1/config.dart';
+import 'package:calc1/Bienvenida.dart';
 //import 'package:calculadora/Mandar.dart';
 
 
@@ -19,8 +20,9 @@ class _BasicmenuState extends State<menu>  {
   int _selectedIndex = 0;
 
   List<Widget> _pages = <Widget>[
-    saludo(),
+    Mandar(),
     calcu(title: 'no se donde va esto'),
+    cuadroDeTexto(),
 
 
     // Icon(
@@ -42,7 +44,7 @@ class _BasicmenuState extends State<menu>  {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Primera Asignación'),
+        title: const Text('Primera Asignación'),backgroundColor: Colors.orangeAccent,
       ),
       body:
       Center(

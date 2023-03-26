@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:calc1/menu.dart';
+import 'package:calc1/Control_Almacenamiento.dart';
 
-void main(){
+void main()async{
   //el main de toda la vida que inicai el código.
+  await ControlAlmacenamiento.configurePrefs();
   runApp(const MyApp());
 }
 // *****************************************************************************
@@ -73,7 +75,7 @@ class calcu extends StatefulWidget {
 //
 class _calcu extends State<calcu> {//
   String _numero = "";
-
+  int _num1 =1;
 
   ///int _counter = 0;
   void _vaciar() {
@@ -154,28 +156,9 @@ class _calcu extends State<calcu> {//
   }
   @override
   Widget build(BuildContext context) {
-    // Scaffold estante
+    // Scaffold
     return Scaffold(
      // appBar: AppBar(
-
-
-      //),
-      //bottomNavigationBar: BottomNavigationBar(
-        //items: const <BottomNavigationBarItem>[
-        //BottomNavigationBarItem(
-          //icon: Icon(Icons.call),
-          //label: 'Inicio',
-        //),
-        //BottomNavigationBarItem(
-          //icon: Icon(Icons.calculate),
-          //label: 'Calculadora',
-        //),
-        //BottomNavigationBarItem(
-          //icon: Icon(Icons.account_circle_outlined),
-          //label: 'Texto',
-        //),
-     // ]
-      //),
 
       body: Center(
         child: Column(
